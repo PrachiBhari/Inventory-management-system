@@ -89,7 +89,7 @@ inventory-management-system/
 ## Setup Instructions (Local)
 
 ### Clone the repository
-git clone https://github.com/your-username/inventory-management-system.git
+git clone https://github.com/PrachiBhari/Inventory-management-system.git
 
 cd inventory-management-system
 
@@ -116,7 +116,7 @@ Frontend `.env` file:
 VITE_API_URL=http://localhost:5000
 
 Production (Netlify):
-VITE_API_URL=https://your-backend-url
+VITE_API_URL=https://inventory-management-system-backend-kh4r.onrender.com
 
 ---
 
@@ -135,8 +135,11 @@ VITE_API_URL=https://your-backend-url
 
 ## Example CSV Output
 Name,SKU,Quantity,Price
+
 Wireless Mouse,MOU-1002,3,799
+
 USB-C Fast Charger,CHR-1004,2,1299
+
 Bluetooth Headphones,HPH-1006,1,3499
 
 
