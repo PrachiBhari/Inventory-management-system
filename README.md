@@ -69,22 +69,40 @@ inventory-management-system/
 │ ├── src/
 
 │ │ ├── config/
+
 │ │ ├── models/
+
 │ │ ├── controllers/
+
 │ │ ├── routes/
+
 │ │ └── utils/
+
 │ ├── server.js
+
 │ └── package.json
+
 │
+
 ├── frontend/
+
 │ ├── src/
+
 │ │ ├── components/
+
 │ │ ├── pages/
+
 │ │ ├── api/
+
+
 │ │ └── styles/
+
 │ ├── index.html
+
 │ └── package.json
+
 │
+
 └── README.md
 
 ---
