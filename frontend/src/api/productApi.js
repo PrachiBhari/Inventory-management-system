@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/products",
+ baseURL: "https://inventory-backend.onrender.com/api/products",
 });
 
 export const getProducts = () => API.get("/");
