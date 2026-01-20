@@ -27,7 +27,15 @@ function Reports() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div
+  style={{
+    background: "white",
+    padding: "24px",
+    borderRadius: "12px",
+    boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
+  }}
+>
+
       <h2>Low Stock Report</h2>
 
       <button onClick={handleDownload}>
@@ -35,12 +43,17 @@ function Reports() {
       </button>
 
       <table border="1" width="100%" cellPadding="10" style={{ marginTop: "20px" }}>
-        <thead>
+       <thead style={{ background: "#eaf3f6" }}>
+
           <tr>
-            <th>Name</th>
-            <th>SKU</th>
-            <th>Quantity</th>
-            <th>Price</th>
+           <th style={{ textAlign: "left", color: "#245a66" }}>
+ Name</th>
+            <th style={{ textAlign: "left", color: "#245a66" }}>
+SKU</th>
+            <th style={{ textAlign: "left", color: "#245a66" }}>
+Quantity</th>
+            <th style={{ textAlign: "left", color: "#245a66" }}>
+Price</th>
           </tr>
         </thead>
         <tbody>

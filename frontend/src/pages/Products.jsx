@@ -23,8 +23,16 @@ function Products() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Product Inventory</h2>
+   <div
+  style={{
+    background: "white",
+    padding: "24px",
+    borderRadius: "12px",
+    boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
+  }}
+>
+
+      <h2 style={{ marginBottom: "20px" }}>Product Inventory</h2>
 
       <div style={{ marginBottom: "10px" }}>
         <Link to="/add">➕ Add Product</Link>{" "}

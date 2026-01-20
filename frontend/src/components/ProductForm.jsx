@@ -25,15 +25,69 @@ function ProductForm({ initialData = {}, onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: "400px" }}>
-      <input name="name" placeholder="Name" value={form.name} onChange={handleChange} required />
-      <input name="sku" placeholder="SKU" value={form.sku} onChange={handleChange} required />
-      <input name="quantity" type="number" placeholder="Quantity" value={form.quantity} onChange={handleChange} required />
-      <input name="price" type="number" placeholder="Price" value={form.price} onChange={handleChange} required />
-      <input name="threshold" type="number" placeholder="Threshold" value={form.threshold} onChange={handleChange} />
-      <button type="submit">Save</button>
-    </form>
+    <form onSubmit={handleSubmit} style={styles.form}>
+  <div style={styles.field}>
+    <label>Name</label>
+    <input name="name" value={form.name} onChange={handleChange} required />
+  </div>
+
+  <div style={styles.field}>
+    <label>SKU</label>
+    <input name="sku" value={form.sku} onChange={handleChange} required />
+  </div>
+
+  <div style={styles.row}>
+    <div style={styles.field}>
+      <label>Quantity</label>
+      <input type="number" name="quantity" value={form.quantity} onChange={handleChange} required />
+    </div>
+
+    <div style={styles.field}>
+      <label>Threshold</label>
+      <input type="number" name="threshold" value={form.threshold} onChange={handleChange} />
+    </div>
+  </div>
+
+  <div style={styles.field}>
+    <label>Price</label>
+    <input type="number" name="price" value={form.price} onChange={handleChange} required />
+  </div>
+
+  <button type="submit" style={styles.btn}>
+    Save Product
+  </button>
+</form>
+
   );
 }
+const styles = {
+  form: {
+    background: "white",
+    padding: "24px",
+    borderRadius: "12px",
+    boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
+    maxWidth: "500px",
+  },
+  field: {
+    display: "flex",
+    flexDirection: "column",
+    marginBottom: "16px",
+  },
+  row: {
+    display: "flex",
+    gap: "16px",
+  },
+  btn: {
+    marginTop: "10px",
+    padding: "12px",
+    background: "#2f6f7e",
+    color: "white",
+    border: "none",
+    borderRadius: "8px",
+    fontSize: "15px",
+    cursor: "pointer",
+  },
+};
+
 
 export default ProductForm;
