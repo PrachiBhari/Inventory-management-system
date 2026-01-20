@@ -63,8 +63,11 @@ Backend (Render): https:https://inventory-management-system-backend-kh4r.onrende
 ## Project Structure
 
 inventory-management-system/
+
 ├── backend/
+
 │ ├── src/
+
 │ │ ├── config/
 │ │ ├── models/
 │ │ ├── controllers/
